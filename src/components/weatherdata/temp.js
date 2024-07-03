@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Weathercard from "./weathercard";
 import "./style.css";
-
+/* eslint-disable */
 const Temp = () => {
   const [searchValue, setSearchValue] = useState("pune");
   const [tempInfo, setTempInfo] = useState({});
@@ -36,11 +36,10 @@ const Temp = () => {
     }
   };
 
-  // eslint-disable-next-line
+
   useEffect(() => {
     getWeatherInfo();
   }, []);
-  // eslint-enable-next-line
 
   return (
     <>
