@@ -36,9 +36,11 @@ const Temp = () => {
     }
   };
 
+  // eslint-disable-next-line
   useEffect(() => {
     getWeatherInfo();
   }, []);
+  // eslint-enable-next-line
 
   return (
     <>
